@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/result', (req, res) => {
-	delivery = req.body
+	delivery += req.body
 	//console.log(delivery)
 	res.send(delivery)
 });
