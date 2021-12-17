@@ -1,12 +1,12 @@
 const express = require('express');
-const cors = require('cors')
+const cors = require('cors');
 
 const PORT = process.env.PORT || 4001;
 
 let app = express();
 
 let delivery = '';
-let deliverycache = []
+let deliverycache = [];
 app.use(express.json());
 
 app.get('/', (req, res) => {
