@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
 	console.log(delivery)
+	res.write(delivery)
 	res.status(200).send(delivery)
 });
 
