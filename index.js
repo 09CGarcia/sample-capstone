@@ -10,12 +10,12 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
 	console.log(delivery)
-	res.write(delivery)
 	res.status(200).send(delivery)
 });
 
 app.post('/result', (req, res) => {
 	delivery = req.body
+	//console.log(delivery)
 	res.send(delivery)
 });
 
