@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 	console.log(delivery)
 	res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
 	res.status(200).send(delivery)
 });
 
